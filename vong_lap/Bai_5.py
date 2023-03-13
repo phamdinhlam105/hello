@@ -1,4 +1,9 @@
-print("Cac so chia het cho 7 nhung khong chia het cho 5 trong doan 2000 va 3200: ")
-for i in range(2000,3201):
-    if (i%7==0) & (i%5!=0):
-        print( "%d, "%i ,end='')
+n=int(input("Nhap vao so can tinh giai thua:"))
+temp=1
+if(n>=0):
+    for i in range(2,n+1):
+        temp*=i
+    print("Giai thua cua %d la: %d" %(n,temp))
+else:
+    print("ko tinh duoc giai thua so am")
+

@@ -1,5 +1,4 @@
-n=int(input("Nhap vao so n: "))
-print("{",end='')
-for i in range(1,n):
-    print("%d:%d, " %(i,i*i), end='')
-print("%d:%d}" %(n,n*n))
+print("Cac so chia het cho 7 nhung khong chia het cho 5 trong doan 2000 va 3200: ")
+for i in range(2000,3201):
+    if (i%7==0) & (i%5!=0):
+        print( "%d, "%i ,end='')
