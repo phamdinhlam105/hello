@@ -1,11 +1,13 @@
 def inchuoi(so):
     if so<10:
-        print("%d"%so,end='')
+        print(so,end='')
     else:
         inchuoi(int(so/10))
         temp=so%10
-        print(",%d" %temp,end='')
+        print(",%d"%temp,end='')
         
+        
+chuoi= ''
 n=int(input("Nhap vao so can tinh giai thua:"))
 temp=1
 if(n>=0):
