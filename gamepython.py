@@ -13,24 +13,24 @@ pygame.init()
 screen=pygame.display.set_mode((216,384))
 clock=pygame.time.Clock()
 
-bg=pygame.image.load('FileGame/assets/background-night.png').convert()
-floor=pygame.image.load('FileGame/assets/floor.png').convert()
+bg=pygame.image.load('FileGame/assets/background-night.png')
+floor=pygame.image.load('FileGame/assets/floor.png')
 floor_x_pos = 0
 
-bird_anim1=pygame.image.load('FileGame/assets/yellowbird-midflap.png').convert()
-bird_anim2=pygame.image.load('FileGame/assets/yellowbird-upflap.png').convert()
-bird_anim3=pygame.image.load('FileGame/assets/yellowbird-downflap.png').convert()
+bird_anim1=pygame.image.load('FileGame/assets/yellowbird-midflap.png')
+bird_anim2=pygame.image.load('FileGame/assets/yellowbird-upflap.png')
+bird_anim3=pygame.image.load('FileGame/assets/yellowbird-downflap.png')
 bird=bird_anim1
 bird_rect=bird.get_rect(center=(80,172))
 
-game_over=pygame.image.load('FileGame/assets/gameover.png').convert()
+game_over=pygame.image.load('FileGame/assets/gameover.png')
 
 flag=0
 gravity=0.08
 bird_movement=0
 tao_cot=1
 bird_anim=0
-pipe=pygame.image.load('FileGame/assets/pipe-green.png').convert()
+pipe=pygame.image.load('FileGame/assets/pipe-green.png')
 pipe_rect=pipe.get_rect(center=(216,140))
 while True:
     for event in pygame.event.get():
