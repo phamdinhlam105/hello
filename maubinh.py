@@ -137,7 +137,7 @@ def kiemtra(chi,sochi):
     trung_doi=0
     for i in range(0,len(chi)):
         for j in range(i+1,len(chi)):
-            if (chi[i]%13)==(chi[j+1]%13):
+            if (chi[i]%13)==(chi[j]%13):
                 doi+=1
     if doi==1:
         return 2 #doi
