@@ -118,15 +118,7 @@ def updatewindow(randomed_card):
     screen.blit(fulltime,(520,300))
     screen.blit(pygame.transform.scale_by(time_run,(time_count,1)),(530,310))
     pygame.display.flip()
-def boichung(x,y):
-    if ((x==0) & (y%13==0)) | ((y==0) & (x%13==0)):
-        return 13
-    if x==y:
-        return x
-    elif x>y:
-        return boichung(x-y,y)
-    else:
-        return boichung(x,y-x)
+
         
 def kiemtra(chi,sochi):
     chi.sort()
@@ -145,7 +137,7 @@ def kiemtra(chi,sochi):
     trung_doi=0
     for i in range(0,len(chi)):
         for j in range(i+1,len(chi)):
-            if boichung(chi[i]-chi[i]%13,chi[j+1]-chi[i]%13)==13:
+            if (chi[i]%13)==(chi[j+1]%13):
                 doi+=1
     if doi==1:
         return 2 #doi
