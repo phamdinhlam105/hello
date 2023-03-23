@@ -155,11 +155,11 @@ def kiemtra(chi,sochi):
 def Score(card_list):
     for i in range(0,4):
         chi1= [card_list[i*13+8],card_list[i*13+9],card_list[i*13+10],card_list[i*13+11],card_list[i*13+12]]
-        score_player[i*3]=kiemtra(chi1)
+        score_player[i*3]=kiemtra(chi1,1)
         chi2= [card_list[i*13+3],card_list[i*13+4],card_list[i*13+5],card_list[i*13+6],card_list[i*13+7]]
-        score_player[i*3+1]=kiemtra(chi2)
+        score_player[i*3+1]=kiemtra(chi2,2)
         chi3= [card_list[i*13],card_list[i*13+1],card_list[i*13+2]]
-        score_player[i*3+2]=kiemtra(chi3)
+        score_player[i*3+2]=kiemtra(chi3,3)
 pygame.init()
 global screen
 global bg

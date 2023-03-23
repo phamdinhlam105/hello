@@ -71,3 +71,10 @@ if 'thirty_days_of_python'.isidentifier:
     print("True")
 else:
     print("False")
+#bai31
+list1=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' '.join(list1))
+#bai33
+print("I am enjoying this challenge.\nI just wonder what is next.")
+print("Name\tAge\tCountry\nMessi\t250\tArgentina")
+print('radius = {radius}\narea = {pi} * {radius} ** 2\nThe area of a cricle with radius {radius} is {area} meters square.'.format(radius=10,pi=3.14,area=3.14))
